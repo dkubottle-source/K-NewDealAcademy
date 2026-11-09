@@ -1,0 +1,119 @@
+test_candidate_metadata_excluded_and_decision_saved (test_monitoring.TestMonitoring.test_candidate_metadata_excluded_and_decision_saved) ... ok
+test_local_sensitivity_preserves_input (test_monitoring.TestMonitoring.test_local_sensitivity_preserves_input) ... ok
+test_replay_end_and_idempotent_history (test_monitoring.TestMonitoring.test_replay_end_and_idempotent_history) ... ok
+test_duplicate_header_and_ragged_csv (test_phase3.TestPhase3.test_duplicate_header_and_ragged_csv) ... ok
+test_export_csv_pdf_and_empty_pdf (test_phase3.TestPhase3.test_export_csv_pdf_and_empty_pdf) ... ok
+test_inspection_edit_and_reopen (test_phase3.TestPhase3.test_inspection_edit_and_reopen) ... ok
+test_invalid_input_blocks_prediction_and_storage (test_phase3.TestPhase3.test_invalid_input_blocks_prediction_and_storage) ... ok
+test_invalid_label (test_phase3.TestPhase3.test_invalid_label) ... ok
+test_invalid_numeric_missing_infinite (test_phase3.TestPhase3.test_invalid_numeric_missing_infinite) ... ok
+test_invalid_schema (test_phase3.TestPhase3.test_invalid_schema) ... ok
+test_legacy_history_preserved_and_idempotent_migration (test_phase3.TestPhase3.test_legacy_history_preserved_and_idempotent_migration) ... ok
+test_missing_selection_or_empty (test_phase3.TestPhase3.test_missing_selection_or_empty) ... ok
+test_original_rows_survive_filtering (test_phase3.TestPhase3.test_original_rows_survive_filtering) ... ok
+test_prediction_reproducibility_roundtrip (test_phase3.TestPhase3.test_prediction_reproducibility_roundtrip) ... ok
+test_provenance_and_threshold_saved (test_phase3.TestPhase3.test_provenance_and_threshold_saved) ... ok
+test_provenance_cannot_be_spoofed (test_phase3.TestPhase3.test_provenance_cannot_be_spoofed) ... ok
+test_recorded_and_exported_prediction_agree (test_phase3.TestPhase3.test_recorded_and_exported_prediction_agree) ... ok
+test_unknown_event_and_invalid_status (test_phase3.TestPhase3.test_unknown_event_and_invalid_status) ... ok
+test_valid_single_class_unlabelled (test_phase3.TestPhase3.test_valid_single_class_unlabelled) ... ok
+test_all_pages_all_existing_models (test_phase3.TestStreamlitPhase3.test_all_pages_all_existing_models) ... 2026-11-09 10:31:59.929 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-09 10:32:07.682 Serialization of dataframe to Arrow table was unsuccessful. Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\dataframe_util.py", line 967, in convert_pandas_df_to_arrow_table
+    return pa.Table.from_pandas(df, preserve_index=preserve_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 4777, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 658, in <listcomp>
+    arrays = [convert_column(c, f)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 643, in convert_column
+    raise e
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 637, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 414, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 97, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column risk_caution_threshold with type object')
+ok
+test_failed_upload_blocks_predict_and_save (test_phase3.TestStreamlitPhase3.test_failed_upload_blocks_predict_and_save) ... 2026-11-09 10:32:07.693 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_inspection_form_edit_persists_in_new_session (test_phase3.TestStreamlitPhase3.test_inspection_form_edit_persists_in_new_session) ... 2026-11-09 10:32:07.882 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-09 10:32:08.445 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_stale_valid_upload_is_blocked_after_invalid_replacement (test_phase3.TestStreamlitPhase3.test_stale_valid_upload_is_blocked_after_invalid_replacement) ... 2026-11-09 10:32:08.753 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_successful_upload_prediction_saved (test_phase3.TestStreamlitPhase3.test_successful_upload_prediction_saved) ... 2026-11-09 10:32:09.190 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_upload_not_selected_blocks_screen (test_phase3.TestStreamlitPhase3.test_upload_not_selected_blocks_screen) ... 2026-11-09 10:32:09.583 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_actual_nested_folds_and_selection_freeze (test_phase4.TestPhase4.test_actual_nested_folds_and_selection_freeze) ... ok
+test_all_algorithms_train_save_load_predict (test_phase4.TestPhase4.test_all_algorithms_train_save_load_predict) ... ok
+test_binary_and_risk_thresholds_independent_and_stored (test_phase4.TestPhase4.test_binary_and_risk_thresholds_independent_and_stored) ... ok
+test_feature_metadata_excluded_and_hgb_no_random_early_stopping (test_phase4.TestPhase4.test_feature_metadata_excluded_and_hgb_no_random_early_stopping) ... ok
+test_phase3_migration_preserves_records (test_phase4.TestPhase4.test_phase3_migration_preserves_records) ... ok
+test_recall_threshold_largest_feasible_with_ties (test_phase4.TestPhase4.test_recall_threshold_largest_feasible_with_ties) ... ok
+test_risk_csv_and_pdf_export_and_inspection_preserved (test_phase4.TestPhase4.test_risk_csv_and_pdf_export_and_inspection_preserved) ... ok
+test_saved_candidates_and_legacy_policy_binding (test_phase4.TestPhase4.test_saved_candidates_and_legacy_policy_binding) ... ok
+test_scaler_fit_uses_only_training_samples (test_phase4.TestPhase4.test_scaler_fit_uses_only_training_samples) ... ok
+test_three_risk_levels_and_boundaries (test_phase4.TestPhase4.test_three_risk_levels_and_boundaries) ... ok
+test_threshold_bad_inputs (test_phase4.TestPhase4.test_threshold_bad_inputs) ... ok
+test_threshold_curve_confusions_and_edges (test_phase4.TestPhase4.test_threshold_curve_confusions_and_edges) ... ok
+test_warning_replay_saved_even_binary_normal (test_phase4.TestPhase4.test_warning_replay_saved_even_binary_normal) ... ok
+test_caution_binary_preset_and_restore (test_phase4.TestPhase4Screens.test_caution_binary_preset_and_restore) ... 2026-11-09 10:32:11.212 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-09 10:32:11.555 The widget with key "binary_cutoff_sha256:7544a523fa1edce5b6234917a086c20ba3509f695b442e88e5d9ea7ead17b0b1" was created with a default value but also had its value set via the Session State API.
+Stack (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\testing\v1\local_script_runner.py", line 157, in _run_script_thread
+    super()._run_script_thread()
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 443, in _run_script_thread
+    self._run_script(request.rerun_data)
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 961, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 936, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\app.py", line 324, in <module>
+    main()
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\app.py", line 127, in main
+    threshold = st.sidebar.slider('�̻� ���� �Ӱ谪', min_value=0.0, max_value=1.0,
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\runtime\metrics_util.py", line 732, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\elements\widgets\slider.py", line 840, in slider
+    return self._slider(
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\elements\widgets\slider.py", line 888, in _slider
+    check_widget_policies(
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\elements\lib\policies.py", line 146, in check_widget_policies
+    check_session_state_rules(
+  File "C:\Users\Administrator\Documents\ChatGPT\AI ��� �̻� Ž���ý���\cold_rolling_ai\.venv\Lib\site-packages\streamlit\elements\lib\policies.py", line 90, in check_session_state_rules
+    _LOGGER.warning(
+ok
+test_model_switch_updates_binary_threshold_default (test_phase4.TestPhase4Screens.test_model_switch_updates_binary_threshold_default) ... 2026-11-09 10:32:11.690 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_monitoring_detail_link (test_phase4.TestPhase4Screens.test_monitoring_detail_link) ... 2026-11-09 10:32:12.075 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_new_pages_all_candidates_and_legacy_screens (test_phase4.TestPhase4Screens.test_new_pages_all_candidates_and_legacy_screens) ... 2026-11-09 10:32:12.791 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_task_page_accepts_upload_without_label (test_phase4.TestPhase4Screens.test_task_page_accepts_upload_without_label) ... 2026-11-09 10:32:21.601 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_inspection (test_pipeline.TestPipeline.test_inspection) ... ok
+test_missing (test_pipeline.TestPipeline.test_missing) ... ok
+test_no_meta_feature_leak (test_pipeline.TestPipeline.test_no_meta_feature_leak) ... ok
+test_normal_only_official_train_falls_back (test_pipeline.TestPipeline.test_normal_only_official_train_falls_back) ... ok
+test_predict (test_pipeline.TestPipeline.test_predict) ... ok
+test_schema (test_pipeline.TestPipeline.test_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 23.557s
+
+OK
